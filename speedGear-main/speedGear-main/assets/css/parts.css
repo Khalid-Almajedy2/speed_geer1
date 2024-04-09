@@ -1,0 +1,292 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    
+    } */
+    /*بداية الهيدر*/
+    
+    .logo img{
+    width: 110px;
+    
+    }
+    /*  خلفية الموقع*/
+    .container{
+        background-color:white;
+        /* box-shadow: 0px 0px 15px black; */
+        height: 100px;
+      
+      
+    }
+    /*لون الهيدر و السيكشن لكامل الاختيارات الي وسط*/
+    .navbar{
+        background-color: black;
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+    }
+    /* الاختيارات الي وسط الهيدر*/
+    .navbar .list a{
+        margin-left: 40px;
+        text-decoration:none ;
+        color: white;
+        font-size: 18px;
+        transition: 0.4s;
+        font-family: 'Cairo', sans-serif;
+    }
+    /* لون الاختيارات الي وسط لما نضغط عليها*/
+    .navbar .list a:hover{
+        color: orangered;
+    
+    }
+    /* اعدادت الديف الي بيسار الهيدر*/
+    .left{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    }
+    /* السلة*/
+    .left span{
+        margin-left: 15px;
+        cursor: pointer;
+        font-size: 25px;
+        color: white;
+        
+    }
+    .p{
+        color: aqua;
+    }
+    /* مكان اختيار اللغة*/
+    .left select{
+        background: none;
+        color:white;
+        margin-left: 15px;
+        font-size: 15px;
+        box-shadow: 0px 0px 15px whitesmoke;
+        transition: 0.4s;
+    }
+    /* لون مربع اللغة  */
+    .left select:hover{
+        color: orangered;
+        cursor: pointer;
+    }
+    /* إعدادات زر التسجيل  */
+    .left button{
+        box-shadow: 0px 0px 15px whitesmoke;
+        background: none;
+        padding: 15px;
+        font-size: 14px;
+        width: 130px;
+        color: white;
+        font-family: 'Cairo', sans-serif;
+        border-radius: 35px;
+        border: solid orangered 3px;
+        transition: 0.4s;
+    }
+    /* لون زر التسجيل عند الضغط عليه*/
+    .left button:hover{
+        background-color: orangered;
+        color:white;
+    }
+    
+    /*نهاية الهيدر*/
+
+
+
+/*اعدادات جملة اختر نوع قطعة سنتافي المطلوبة*/
+.titlee{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-weight: normal;
+    font-size: 32px;
+    position: relative;
+    margin: 40px 0;
+    font-family: 'Cairo', sans-serif;
+}
+/*اعدادات جملة اختر نوع قطعة سنتافي المطلوبة*/
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color:orangered;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+    
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+/*نهايه اعدادات جملة اختر نوع قطعة سنتافي المطلوبة*/
+
+/* بدايه صور القطع */
+/* .cards-list{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 25px  black;
+
+} */
+/*المربعات الي حول القطع  */
+.card{
+    /*
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0px 5px 25px black;
+    */
+    /* margin: 50px auto;
+    width: 50px;
+    height: 160px;
+    cursor: pointer;
+    transition: 0.4s; */
+}
+
+/*حجم صور القطع */
+/* .card_image{
+width: 70px;
+
+} */
+
+/* .card_image img{
+    width: inherit;
+    height: inherit;
+   
+} */
+/*اسماء القطع  */
+.card_title{
+    /* color:black ;
+    font-family:'Cairo', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 1px; */
+
+    /*
+    text-shadow: 3px 4px orangered;
+    */
+}
+/*تكبير صور القطع عند الضغط عليها */
+.card:hover{
+    transform: scale(1.09);
+}
+
+
+    /*بداية اعدادات الفوتر*/
+    .contact{
+        /* min-height: 50vh;
+        background-color: whitesmoke;
+        padding: 2px;
+        text-align: center;
+        box-shadow: 0px 5px 25px  black; */
+    }
+    
+    .footer{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .footer h2{
+        font-size: 32px;
+        margin-bottom: 40px;
+        font-family: 'Cairo', sans-serif;
+        color: black;
+       
+    }
+    
+    /*بداية اعدادات الجهة اليمين*/
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .contact-form{
+        text-align: right;
+    }
+    .contact-form h3{
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: red;
+        font-family: 'Cairo', sans-serif;
+    }
+     .form-group{
+        margin-bottom: 20px;
+     }
+     /*الحدود حول المستطيلات */
+    input, textarea{
+        width: 100%;
+        padding: 9px;
+        border-radius: 8px;
+        border: none;
+        background-color: white;
+        color: black;
+    }
+    /*التظليل حول المستطيلات */
+    input:focus,
+    textarea:focus{
+        outline: none;
+        box-shadow: 0 0 8px black; 
+    }
+    /*زر الارسال */
+    button{
+        width: 90px;
+        display: inline-block;
+        padding: 12px 30px;
+        background: none;
+        font-family: 'Cairo', sans-serif;
+        color: black;
+        border: none;
+        cursor: pointer;
+        transition: 0.4s;
+        border-radius: 35px;
+        border: solid orangered 3px;
+    }
+    button:hover{
+        background-color:orangered ;
+    }
+    /*بداية اعدادات الجهة اليسار*/
+    .contact-info{
+        text-align: left;
+    }
+    .contact-info h3{
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: red;
+        font-family: 'Cairo', sans-serif;
+    }
+    /* المعلوما بجانب الايقونات  */
+    .contact-info p{
+        margin-bottom: 25px;
+        color: black;
+        font-family: 'Cairo', sans-serif;
+       
+    }
+    /* الايقونات بجانب المعلومات   */
+    .contact-info i{
+        margin-right: 12px;
+        color: orangered;
+        margin-left: 20px;
+    }
+    .count-cart {
+        font-size: 12px;
+            border-radius: 50px;
+            color: white;
+            background: red;
+            padding: 4px;
+        }
+    /*نهاية اعدادات الفوتر*/

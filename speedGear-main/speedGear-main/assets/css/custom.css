@@ -1,0 +1,12 @@
+
+.card_image img {
+    width: 158px !important;
+    height: 112px !important;
+}
+.count-cart {
+    font-size: 12px;
+        border-radius: 50px;
+        color: white;
+        background: red;
+        padding: 4px;
+    }

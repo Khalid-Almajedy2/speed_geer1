@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+/*hero هنا اعدادات الخلفية من عرض وتوسط ولون وصورة*/
+.hero{
+ height: 100%;
+ width: 100%;  
+ background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(logo.jpg);
+ background-position: center;
+ background-size: cover;
+ position: absolute;
+   
+}
+/*.hero:hover{
+    box-shadow: 3px 3px 50px #d6631b;
+    }*/
+/*هنا تعديل المربع الداخل الي فيه الاسم الي بالمنتصف*/
+.form-box{
+   width: 400px; 
+   height: 600px;
+   position: relative;
+   margin: 6% auto;
+   background: #ffffff;
+  /* background: rgba(255, 255, 255, 0.4);فاصل 4 او 2 الاخيره لتحكم بالشفافية الكود هذا يخلي الخلفية 
+  شفافة حق المربع الابيض*/
+   padding: 5px; ;
+   /*تغيير الاطار من هنا */
+   border: 5px solid #e26935;
+border-radius: 50px;
+font-family: 'Cairo', sans-serif;
+overflow: hidden;
+/*overflow: hidden; هذا الي يخلي يرجع يمين ويسار داخل المربع الابيض */
+  /* border-radius: 50%; هذا يخليها بيضاوي للخلفيه البيضاء*/
+}
+/*.form-box:hover{
+    box-shadow: 3px 3px 50px #d6631b;
+    }*/
+/* button-box اعداد سهم التغيير بين الي انشا حساب و تسجيل الدخول */
+.button-box{
+        top: -18px;
+   width: 220px; 
+   margin: 35px auto;
+   position: relative;
+   box-shadow: 0 0 20px 9px #ff61241f;
+   border-radius: 30px;
+   font-family: 'Cairo', sans-serif;
+
+}
+/*اعداد التغيير بين انشا الحساب وتسجيل الدخول الكتابه الي داخل */
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position:absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+/*تغيير طول المساحة الي تنزل وتطلع  الاسم والباقي */
+.input-group{
+    top: 110px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    font-weight: bold;
+    font-style: oblique;
+    font-stretch: ultra-expanded;
+    right: 100%;
+}
+/*ترتيب تشيك بوكس */ 
+.input-field{
+    width: 100%;
+    padding: 16px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    font-family: 'Cairo', sans-serif;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 30px;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+/*اعدادات لون تسجيل الدخول التي بالاسفل */
+}
+
+.chech-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 95px;
+    position: absolute;
+    /* اعدادات تذكير كلمه المرور ولونها*/
+}
+
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
+.remember{
+
+    margin-top: 80px;
+    color: #b3b3b3;
+    float:l;
+    }
+    
+    a{
+        float: left;
+        text-decoration: none;
+    }
+
+  

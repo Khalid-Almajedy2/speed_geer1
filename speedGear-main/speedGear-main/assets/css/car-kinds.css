@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    text-decoration: none;
+    
+    }
+    
+    /*بداية الهيدر*/
+    
+    .logo img{
+    width: 110px;
+    
+    }
+    /*  خلفية الموقع*/
+    .container{
+        background-color:white;
+       box-shadow: 0px 0px 15px black;
+      height: 100px;
+      
+      
+    }
+    /*لون الهيدر و السيكشن لكامل الاختيارات الي وسط*/
+    .navbar{
+        background-color: black;
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+    }
+    /* الاختيارات الي وسط الهيدر*/
+    .navbar .list a{
+        margin-left: 40px;
+        text-decoration:none ;
+        color: white;
+        font-size: 18px;
+        transition: 0.4s;
+        font-family: 'Cairo', sans-serif;
+    }
+    /* لون الاختيارات الي وسط لما نضغط عليها*/
+    .navbar .list a:hover{
+        color: orangered;
+    
+    }
+    /* اعدادت الديف الي بيسار الهيدر*/
+    .left{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    }
+    /* السلة*/
+    .left span{
+        margin-left: 15px;
+        cursor: pointer;
+        font-size: 25px;
+        color: white;
+        
+    }
+    /* مكان اختيار اللغة*/
+    .left select{
+        background: none;
+        color:white;
+        margin-left: 15px;
+        font-size: 15px;
+        box-shadow: 0px 0px 15px whitesmoke;
+        transition: 0.4s;
+    }
+    /* لون مربع اللغة  */
+    .left select:hover{
+        color: orangered;
+        cursor: pointer;
+    }
+    /* إعدادات زر التسجيل  */
+    .left button{
+        box-shadow: 0px 0px 15px whitesmoke;
+        background: none;
+        padding: 15px;
+        font-size: 14px;
+        width: 130px;
+        color: white;
+        font-family: 'Cairo', sans-serif;
+        border-radius: 35px;
+        border: solid orangered 3px;
+        transition: 0.4s;
+    }
+    /* لون زر التسجيل عند الضغط عليه*/
+    .left button:hover{
+        background-color: orangered;
+        color:white;
+    }
+    
+    /*نهاية الهيدر*/
+
+    /*اعدادات جملة   فئه هونداي*/
+.titlee{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+    font-family: 'Cairo', sans-serif;
+}
+/*الخط الي تحت جملة  فئه هونداي*/
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color:orangered;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+    
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+/*نهاية إعدادات جملة فئه هونداي*/
+
+/*بداية اعدادات صور السيارات */
+.cars-img{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+/*المربعات الي حول صور السيارات */
+.card{
+    /*
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0px 5px 25px black;
+    */
+    margin: 30px auto;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    /*يكون في اطار حول المربع
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+*/
+    transition: 0.4s;
+}
+
+/*حجم صور السيارات */
+.card_image{
+    width: 200px; 
+ }
+
+ .card_image img{
+    width: inherit;
+    height: inherit;
+   
+}
+
+/*اسماء السيارات */
+.card_title{
+    color:black ;
+    text-align: center;
+    font-family:'Cairo', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 1px;
+}
+
+/*تكبير صور السيارات عند الضغط عليها */
+.card:hover{
+    transform: scale(1.09);
+}
+.count-cart {
+font-size: 12px;
+    border-radius: 50px;
+    color: white;
+    background: red;
+    padding: 4px;
+}
+/*نهاية اعدادات صور السيارات */

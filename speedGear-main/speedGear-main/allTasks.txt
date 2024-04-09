@@ -1,0 +1,12 @@
+1- Connect website To Database  =========== Done.
+2- Create Master Page For All Pages ======= Done.
+3- in Desktop (Tajer)  in company combobox the inedx didont Chaged when selet changed.
+4- Add Search using barcode 
+5- Add Search between two dates
+6- Add Search Based on Status.
+7- Pices Screen Must Display Using Filter( company_id, car_id, section_id, model) ======= Done.
+8- Cart
+9- add to Cart
+10- payment
+11- add Plus and minus buttons to cart rows.
+12- total must be updated when cart changed.
